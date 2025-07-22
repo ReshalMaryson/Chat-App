@@ -114,7 +114,11 @@ export default function Chat() {
 
       // Only add the message if chatbox is open & sender=current_chat_id
       if (isChatOpen && isFromCurrentChatUser) {
-        setMessages((prev) => [...prev, data]);
+        // setMessages((prev) => [...prev, data]);
+        setMessages((prev) => {
+          if (prev.find((msg) => msg.id === data.id)) return prev;
+          return [...prev, data];
+        });
 
         // Update read status if it's not my own message
         if (!isMeSender) {
@@ -176,6 +180,7 @@ export default function Chat() {
               created_at: result.data.created_at,
             };
 
+            // you can see that i am not doing anything like saving same message to a state variable.
             socket.emit("privateMessage", {
               ...newMessage,
               receiver_id: receiverId,
