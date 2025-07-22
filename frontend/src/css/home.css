@@ -1,0 +1,29 @@
+h3{
+    text-align: center;
+}
+.info{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.info p{
+    text-align: center;
+}
+.chatnow{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+padding: 0.4rem;
+}
+
+.link_chatnow{
+    background-color: white;
+    color: black;
+    padding: 0.3rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}

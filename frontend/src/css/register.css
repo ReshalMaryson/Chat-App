@@ -1,0 +1,42 @@
+.register_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register_container input{
+border-radius: 2px;
+border: 1px solid white;
+padding: 0.2rem;
+}
+
+.register_container h1{
+    margin-top: 20px;
+}
+.register_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    min-height: 50vh;
+}
+.register_item{
+    display:  flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 5px;
+    text-transform: capitalize;
+}
+.register_container button{
+    background-color: white;
+    color: black;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    width: 100%;
+    text-transform: uppercase;
+}
+#sign-in-email.exists{
+    border: 1px solid red;
+}

@@ -1,0 +1,40 @@
+.login_container{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+    padding: 0.5rem;
+}
+.login_container h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.login_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.get-email,.get_password{
+    display: flex;
+    flex-direction: column;
+}
+.login_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+.login_btn button{ 
+    background-color: white;
+    color: black;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    width: 40%;
+    text-transform: uppercase;
+}

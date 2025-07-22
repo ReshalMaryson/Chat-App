@@ -1,0 +1,76 @@
+/* user chats */
+   .userchats_container{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+     width: 100%;
+    }
+    .heading_chats{
+       width: 100%;
+    }
+    .heading_chats h1{
+      font-size: 1.7rem;
+      text-align: left;
+    }
+  .userchats{
+    padding: 1rem;
+    width: 100%;
+    padding: 0px;
+  }
+  .chats{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 10px;
+    overflow: auto;
+    height: 400px;
+    /* padding: 0.5rem; */
+  }
+  .chat{
+    padding: 3px;
+    border: 1px solid white;
+    height: 60px;
+    border-radius: 5px;
+  }
+  .chats p{
+    text-align: left;
+    width: 100%;
+  }
+  .chats .name{
+    margin-top: -2px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+  .chats .last_message{
+    height: 15px;
+    overflow: hidden;
+    margin-top: -7px;
+    font-size: 0.7rem;
+    color: #8b8888;
+  }
+  .chats .time{
+    font-size: 0.7rem;
+    margin-top:-5px;
+     text-align: right;
+  }
+
+/* active classes */
+.name.active,.last_message.active,.time.active{
+  color: black;
+}
+
+.message_show.active{
+  color: wheat;
+}
+
+.message_show.unread {
+  color:wheat;
+  font-weight: bold;
+}
+
+.message_show.read {
+  color: rgb(155, 153, 153);
+  font-weight: normal;
+}
