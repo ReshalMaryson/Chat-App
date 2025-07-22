@@ -76,19 +76,21 @@ chat-app/
 ---
 
 ### 💻 Frontend (React)
-cd frontend
-npm install
-npm start
+- cd frontend
+- npm install
+- npm start
 ---
 
 
 ### 🔌 Node.js Server (Socket.IO)
-cd server
-npm install
-node index.js
+- cd server
+- npm install
+- node index.js
 
 
-###🧪 Manual Testing Guide
+
+
+### 🧪 Manual Testing Guide
 Follow these steps to test the complete chat flow:
 
 - Register two users, or use existing users from the imported DB.
