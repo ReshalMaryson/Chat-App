@@ -70,8 +70,8 @@ chat-app/
    - File path: `backend/config/chat_app.sql`
    - Import into your local MySQL DB using phpMyAdmin or CLI
 
-> ℹ️ Default login credentials (if using saved DB users):
-> Use any email from the DB, and password = `username123`
+>  Default login credentials (if using saved DB users):
+> Use any email from the DB, and password = `username + 123` e.g (jerry123)
 
 ---
 
