@@ -84,7 +84,7 @@ export default function Login() {
             />
           </div>
           {loginErr ? (
-            <p style={{ color: "red", fontSize: "0.8rem" }}>{loginErr}</p>
+            <p style={{ color: "wheat", fontSize: "0.8rem" }}>{loginErr}</p>
           ) : null}
           <div className="login_btn">
             <button onClick={login} type="button" style={{ cursor: "pointer" }}>

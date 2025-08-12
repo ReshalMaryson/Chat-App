@@ -100,6 +100,7 @@ export default function UserChats({
             {userchats.map((chat) => (
               <div
                 className="chat"
+                style={{ cursor: "pointer" }}
                 key={chat.chat_id}
                 onClick={() => {
                   open_chat(chat.chat_partner_id, chat.chat_partner_name);

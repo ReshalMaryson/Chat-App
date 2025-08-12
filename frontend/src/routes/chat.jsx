@@ -124,6 +124,7 @@ export default function Chat() {
         if (!isMeSender) {
           update_msg_read(data.sender_id, userId);
         }
+        setRefreshchatlist((prev) => (prev > 1000 ? 0 : prev + 1));
       } else {
         setUnreadChats((prev) => {
           if (prev.includes(Number(data.sender_id))) return prev;
@@ -436,8 +437,10 @@ export default function Chat() {
                         <img
                           src={messageicon}
                           alt=""
+                          style={{ cursor: "pointer" }}
                           onClick={() => {
                             chatopen(user.id, user.username);
+                            setSearchquery("");
                           }}
                         />
                       </div>
@@ -480,6 +483,7 @@ export default function Chat() {
                   onClick={() => {
                     chatclose();
                   }}
+                  style={{ cursor: "pointer" }}
                 >
                   ❌
                 </p>

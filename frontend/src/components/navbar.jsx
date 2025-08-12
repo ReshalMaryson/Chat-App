@@ -30,14 +30,16 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="heading_navbar">
+        <div className="heading_navbar" style={{ cursor: "pointer" }}>
           <Link to="/" className="link_login">
             Chat App
           </Link>
         </div>
         <ul>
           {isAuthenticated ? (
-            <li onClick={logout}>Logout</li>
+            <li onClick={logout} style={{ cursor: "pointer" }}>
+              Logout
+            </li>
           ) : (
             <li>
               <Link to="/login" className="link_login">

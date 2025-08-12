@@ -104,7 +104,7 @@ export default function Register() {
             />
           </div>
           {err ? (
-            <p style={{ color: "red", fontSize: "0.8rem" }}>{err}</p>
+            <p style={{ color: "wheat", fontSize: "0.8rem" }}>{err}</p>
           ) : null}
           <div className="send">
             <button onClick={signUp} style={{ cursor: "pointer" }}>
